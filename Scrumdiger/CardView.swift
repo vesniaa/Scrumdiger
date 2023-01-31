@@ -21,8 +21,14 @@ struct CardView: View {
                 //разделитель
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+                //отступы
+                    .padding(.trailing, 20)
             }
+            .font(.caption)
         }
+        //отступы и цвет
+        .padding()
+        .foregroundColor(scrum.theme.accentColor)
     }
 }
 
