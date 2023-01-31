@@ -39,6 +39,8 @@ struct MeetingView: View {
                 }
             }
         }
+        //отступ
+        .padding()
     }
 }
 
