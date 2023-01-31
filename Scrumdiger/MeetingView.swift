@@ -26,6 +26,12 @@ struct MeetingView: View {
                     Label("600", systemImage: "hourglass.tophalf.fill")
                 }
             }
+            //метка доступности
+            .accessibilityElement(children: .ignore)
+            //имя метки
+            .accessibilityLabel("Time remaining")
+            //оставшееся время
+            .accessibilityValue("10 minutes")
             Circle()
             //граница круга
                 .strokeBorder(lineWidth: 24)
@@ -37,6 +43,8 @@ struct MeetingView: View {
                 Button(action: {}) {
                     Image(systemName: "forward.fill")
                 }
+                //метка спец/возможностей для описания кнопки вперед
+                .accessibilityLabel("Next speaker")
             }
         }
         //отступ
