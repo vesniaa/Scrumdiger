@@ -13,6 +13,7 @@
 		8CDCE88B298936CD00A185DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDCE88A298936CD00A185DB /* Preview Assets.xcassets */; };
 		8CDCE89329896AC700A185DB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE89229896AC700A185DB /* Theme.swift */; };
 		8CDCE895298970C300A185DB /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE894298970C300A185DB /* DailyScrum.swift */; };
+		8CDCE89729897CD800A185DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE89629897CD800A185DB /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8CDCE88A298936CD00A185DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CDCE89229896AC700A185DB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8CDCE894298970C300A185DB /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		8CDCE89629897CD800A185DB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				8CDCE891298967C100A185DB /* Models */,
 				8CDCE883298936CA00A185DB /* ScrumdigerApp.swift */,
 				8CDCE885298936CA00A185DB /* MeetingView.swift */,
+				8CDCE89629897CD800A185DB /* CardView.swift */,
 				8CDCE887298936CD00A185DB /* Assets.xcassets */,
 				8CDCE889298936CD00A185DB /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 				8CDCE89329896AC700A185DB /* Theme.swift in Sources */,
 				8CDCE886298936CA00A185DB /* MeetingView.swift in Sources */,
 				8CDCE884298936CA00A185DB /* ScrumdigerApp.swift in Sources */,
+				8CDCE89729897CD800A185DB /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
