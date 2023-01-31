@@ -12,7 +12,7 @@ struct MeetingView: View {
         VStack {
             ProgressView(value: 5, total: 15)
             HStack {
-                //ведущее выравнивание,тоесть выравнивают по центру
+                //ведущее выравнивание,тоесть выравнивает по центру
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
                     //уменьшает размер текста
