@@ -12,15 +12,23 @@ struct MeetingView: View {
         VStack {
             ProgressView(value: 5, total: 15)
             HStack {
-                VStack {
+                //ведущее выравнивание,тоесть выравнивают по центру
+                VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
+                    //уменьшает размер текста
+                        .font(.caption)
                     Label("300", systemImage: "hourglass.bottomhalf.fill")
                 }
-                VStack {
+                //замыкающее выравнивание
+                VStack(alignment: .trailing) {
                     Text("Seconds Remaining")
+                        .font(.caption)
                     Label("600", systemImage: "hourglass.tophalf.fill")
                 }
             }
+            Circle()
+            //граница круга
+                .strokeBorder(lineWidth: 24)
         }
     }
 }
