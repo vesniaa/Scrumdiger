@@ -29,6 +29,15 @@ struct MeetingView: View {
             Circle()
             //граница круга
                 .strokeBorder(lineWidth: 24)
+            HStack {
+                //speaker-динамик
+                Text("Speaker 1 of 3")
+                //разделить между текстом и кнопкой
+                Spacer()
+                Button(action: {}) {
+                    Image(systemName: "forward.fill")
+                }
+            }
         }
     }
 }
