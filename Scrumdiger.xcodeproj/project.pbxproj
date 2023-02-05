@@ -14,7 +14,7 @@
 		8CDCE89329896AC700A185DB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE89229896AC700A185DB /* Theme.swift */; };
 		8CDCE895298970C300A185DB /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE894298970C300A185DB /* DailyScrum.swift */; };
 		8CDCE89729897CD800A185DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE89629897CD800A185DB /* CardView.swift */; };
-		8CDCE899298983F100A185DB /* TrallingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE898298983F100A185DB /* TrallingIconLabelStyle.swift */; };
+		8CDCE899298983F100A185DB /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE898298983F100A185DB /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		8CDCE89229896AC700A185DB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8CDCE894298970C300A185DB /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		8CDCE89629897CD800A185DB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		8CDCE898298983F100A185DB /* TrallingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrallingIconLabelStyle.swift; sourceTree = "<group>"; };
+		8CDCE898298983F100A185DB /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			children = (
 				8CDCE891298967C100A185DB /* Models */,
 				8CDCE883298936CA00A185DB /* ScrumdigerApp.swift */,
-				8CDCE898298983F100A185DB /* TrallingIconLabelStyle.swift */,
+				8CDCE898298983F100A185DB /* TrailingIconLabelStyle.swift */,
 				8CDCE885298936CA00A185DB /* MeetingView.swift */,
 				8CDCE89629897CD800A185DB /* CardView.swift */,
 				8CDCE887298936CD00A185DB /* Assets.xcassets */,
@@ -157,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CDCE899298983F100A185DB /* TrallingIconLabelStyle.swift in Sources */,
+				8CDCE899298983F100A185DB /* TrailingIconLabelStyle.swift in Sources */,
 				8CDCE895298970C300A185DB /* DailyScrum.swift in Sources */,
 				8CDCE89329896AC700A185DB /* Theme.swift in Sources */,
 				8CDCE886298936CA00A185DB /* MeetingView.swift in Sources */,

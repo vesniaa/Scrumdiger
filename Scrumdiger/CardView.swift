@@ -14,15 +14,21 @@ struct CardView: View {
         VStack(alignment: .leading) {
             Text(scrum.title)
                 .font(.headline)
+            //этот модификатор помогает передать информационную архитектуру представления,читая заголовок схватк, за которым следует заголовок.
+                .accessibilityAddTraits(.isHeader)
             //разделитель
             Spacer()
             HStack {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
+                //модификатор доступности чтобы добавить метку описывающую содержимое первой метки в HStack
+                    .accessibilityLabel("\(scrum.attendees.count) attendees")
                 //разделитель
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
-                //отступы
-                    .padding(.trailing, 20)
+                //аналогичный модификатор доступности
+                    .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
+                //новый стиль метки на метку
+                    .labelStyle(.trailingIcon)
             }
             .font(.caption)
         }
