@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CardView: View {
     let scrum: DailyScrum
+    
+    
     var body: some View {
         //упорядочиваем по вертикальной линии
         VStack(alignment: .leading) {
