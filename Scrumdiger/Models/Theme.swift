@@ -38,4 +38,8 @@ enum Theme: String {
     var mainColor: Color {
         Color(rawValue)
     }
+    //добавляем свойство имени в котором необработанные значения пишутся с заглавной буквы.
+    var name: String {
+        rawValue.capitalized
+    }
 }

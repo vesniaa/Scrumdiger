@@ -12,24 +12,37 @@ import SwiftUI
 struct DailyScrum: Identifiable {
     let id: UUID
     var title: String
-    var attendees: [String]
+    var attendees: [Attendee]
     var lengthInMinutes: Int
     var theme: Theme
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title
-        self.attendees = attendees
+        //map: создает новую коллекцию, перебирая и применяя преобразование к каждому элементу в существующей коллекции.
+        self.attendees = attendees.map { Attendee(name: $0 )}
         self.lengthInMinutes = lengthInMinutes
         self.theme = theme
     }
     
 }
 
-//создаю структуру с заголовками, участниками, и свойствами темы.
-
 extension DailyScrum {
-    static var sampleData: [DailyScrum] =
+    struct Attendee: Identifiable {
+        let id: UUID
+        var name: String
+        
+        init(id: UUID = UUID(), name: String) {
+            self.id = id
+            self.name = name
+        }
+        
+    }
+}
+
+//создаю структуру с заголовками, участниками, и свойствами темы.
+extension DailyScrum {
+    static let sampleData: [DailyScrum] =
     [
     
         DailyScrum(title: "Design", attendees: ["Cathy", "Daisy", "Simon", "Jonathan"], lengthInMinutes: 10, theme: .yellow),
