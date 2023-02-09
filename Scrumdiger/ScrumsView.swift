@@ -14,7 +14,7 @@ struct ScrumsView: View {
         //список
         List {
             ForEach(scrums) { scrum in
-                NavigationLink(destination: Text(scrum.title)) {
+                NavigationLink(destination: DetailView(scrum: scrum)) {
                     //инициализировали CardView в замыкании
                     CardView(scrum: scrum)
                 }
