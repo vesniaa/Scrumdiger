@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1027DD299A37FC004649C2 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1027DC299A37FC004649C2 /* DetailEditView.swift */; };
 		8C1F8FAE299021780022568C /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F8FAD299021780022568C /* ScrumsView.swift */; };
 		8CDCE884298936CA00A185DB /* ScrumdigerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE883298936CA00A185DB /* ScrumdigerApp.swift */; };
 		8CDCE886298936CA00A185DB /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCE885298936CA00A185DB /* MeetingView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C1027DC299A37FC004649C2 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		8C1F8FAD299021780022568C /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		8CDCE880298936CA00A185DB /* Scrumdiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdiger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDCE883298936CA00A185DB /* ScrumdigerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdigerApp.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				8CDCE891298967C100A185DB /* Models */,
 				8CDCE883298936CA00A185DB /* ScrumdigerApp.swift */,
 				8CDCE898298983F100A185DB /* TrailingIconLabelStyle.swift */,
+				8C1027DC299A37FC004649C2 /* DetailEditView.swift */,
 				8CDCE885298936CA00A185DB /* MeetingView.swift */,
 				8C1F8FAD299021780022568C /* ScrumsView.swift */,
 				8CEAE98229955403004F57B9 /* DetailView.swift */,
@@ -165,6 +168,7 @@
 			files = (
 				8CDCE899298983F100A185DB /* TrailingIconLabelStyle.swift in Sources */,
 				8CEAE98329955403004F57B9 /* DetailView.swift in Sources */,
+				8C1027DD299A37FC004649C2 /* DetailEditView.swift in Sources */,
 				8CDCE895298970C300A185DB /* DailyScrum.swift in Sources */,
 				8CDCE89329896AC700A185DB /* Theme.swift in Sources */,
 				8C1F8FAE299021780022568C /* ScrumsView.swift in Sources */,
