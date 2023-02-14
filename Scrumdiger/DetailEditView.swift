@@ -31,6 +31,21 @@ struct DetailEditView: View {
                     data.attendees.remove(atOffsets: indices)
                     
                 }
+                HStack {
+                    TextField("New Attendee", text: $newAttendeeName)
+                    Button(action: {
+                        //блок анимации который создает нового участника и добавляет его в массив участников.
+                        withAnimation {
+                            let attendee = DailyScrum.Attendee(name: newAttendeeName)
+                            data.attendees.append(attendee)
+                            newAttendeeName = ""
+                        }
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                    }
+                    //отключаем кнопку если newAttendeeName пусто, кнопка активируется когда пользователь вводит имя в текстовое поле.
+                    .disabled(newAttendeeName.isEmpty)
+                }
             }
         }
     }
