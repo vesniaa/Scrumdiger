@@ -17,9 +17,15 @@ struct DetailEditView: View {
             Section(header: Text("Meeting info")) {
                 TextField("Title", text: $data.title)
                 HStack {
-                    Slider(value: $data.lengthInMinutes, in: 5...30) //step: Text("Length"))
+                    Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
+                        Text("Length")
+                    }
+                    //установили значение доступности для Slider
+                    .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
                     Spacer()
                     Text("\(Int(data.lengthInMinutes)) minutes")
+                    //скрыть текстовое представление от VoiceOver
+                        .accessibilityHidden(true)
                 }
             }
             Section(header: Text("Attendees")) {
@@ -42,6 +48,8 @@ struct DetailEditView: View {
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
+                        //добавляем метку доступности в изображение
+                            .accessibilityLabel("Add attendee")
                     }
                     //отключаем кнопку если newAttendeeName пусто, кнопка активируется когда пользователь вводит имя в текстовое поле.
                     .disabled(newAttendeeName.isEmpty)
