@@ -19,6 +19,7 @@ struct DetailEditView: View {
                 HStack {
                     Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
                         Text("Length")
+                        
                     }
                     //установили значение доступности для Slider
                     .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
@@ -26,7 +27,10 @@ struct DetailEditView: View {
                     Text("\(Int(data.lengthInMinutes)) minutes")
                     //скрыть текстовое представление от VoiceOver
                         .accessibilityHidden(true)
+                    
                 }
+                ThemePicker(selection: $data.theme)
+              
             }
             Section(header: Text("Attendees")) {
                 ForEach(data.attendees) { attendee in

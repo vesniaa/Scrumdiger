@@ -9,7 +9,7 @@
 import SwiftUI
 
 //создаю перечесления с именем Theme с необработанным типом значения String.
-enum Theme: String {
+enum Theme: String, CaseIterable, Identifiable {
     case bubblegum
     case buttercup
     case indigo
@@ -18,7 +18,7 @@ enum Theme: String {
     case navy
     case orange
     case oxblood
-    case perwinkle
+    case periwinkle
     case poppy
     case purple
     case seafoam
@@ -30,7 +30,7 @@ enum Theme: String {
     //добавила свойство Color с именем accentColor, которое возвращает .black or .white  в зависимости от значения self.
     var accentColor: Color {
         switch self {
-        case .bubblegum, .buttercup, .lavender, .orange, .perwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
+        case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
@@ -41,5 +41,8 @@ enum Theme: String {
     //добавляем свойство имени в котором необработанные значения пишутся с заглавной буквы.
     var name: String {
         rawValue.capitalized
+    }
+    var id: String {
+        name
     }
 }

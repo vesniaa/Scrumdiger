@@ -17,6 +17,7 @@ struct ThemeView: View {
             //цвет который без этой строчки кода не добавлялся
                 .background(Color.yellow)
             Label(theme.name, systemImage: "paintpalette")
+                .padding(4)
             
         }
         .foregroundColor(theme.accentColor)
