@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailEditView: View {
     //@State определяет источник истинности для типов значений.
-    @State private var data = DailyScrum.Data()
+    @Binding var data = DailyScrum.Data
     @State private var newAttendeeName = ""
     
     var body: some View {
@@ -21,6 +21,7 @@ struct DetailEditView: View {
                         Text("Length")
                         
                     }
+                    
                     //установили значение доступности для Slider
                     .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
                     Spacer()
@@ -29,9 +30,11 @@ struct DetailEditView: View {
                         .accessibilityHidden(true)
                     
                 }
+                
                 ThemePicker(selection: $data.theme)
-              
+                
             }
+        
             Section(header: Text("Attendees")) {
                 ForEach(data.attendees) { attendee in
                     Text(attendee.name)
@@ -67,6 +70,6 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        DetailEditView(data: .constant(DailyScrum.sampleData[0].data))
     }
 }
